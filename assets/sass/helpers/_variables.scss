@@ -1,0 +1,28 @@
+:root {
+  --main-font: 'Open Sans';
+  --alternate-font: sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+  --h1-font-size: 2.75rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --r-font-weight: 400;
+  --xb-font-weight: 800;
+
+  --main-text-color: #F5F0ED;
+  --second-text-color: #3C3C3B;
+
+  --main-bg-color: #D03B40;
+  --second-bg-color: #DED6C0;
+  --alternate-bg-color: #241D1B;
+  
+  --max-width: 1200px;
+}
+
+$breakpoints: (
+  xs: 30em,   /* 480 / 16 */
+  s: 37.5em,  /* 600 / 16 */
+  m: 45em,    /* 720 / 16 */
+  l: 64em,    /* 1024 / 16 */
+  xl: 75em    /* 1200 / 16 */
+);
