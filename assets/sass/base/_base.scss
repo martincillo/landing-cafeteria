@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font), var(--alternae-font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--main-text-color);
+  background-color: var(--main-text-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
