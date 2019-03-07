@@ -25,6 +25,7 @@
     :root {
       --padding-container: 1.5em; } }
 
+/*----------  Mixin flexbox responsive  ----------*/
 /*----------  Placeholders  ----------*/
 .main-header__content h1::after {
   content: '';
@@ -43,6 +44,14 @@
 
 .uppercase {
   text-transform: uppercase; }
+
+.red {
+  background-color: var(--main-bg-color);
+  color: var(--second-bg-color); }
+
+.gray {
+  background-color: var(--second-bg-color);
+  color: var(--main-bg-color); }
 
 html {
   box-sizing: border-box;
@@ -111,6 +120,24 @@ img {
   @media screen and (min-width: 64em) {
     .main-header-bottom {
       padding-top: 8rem; } }
+
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+  .welcome > * {
+    flex: 1 1 100%; }
+  .welcome-article {
+    padding: 2.5rem 0; }
+    @media screen and (min-width: 64em) {
+      .welcome-article {
+        flex: 1 1 50%;
+        padding: 6.5rem 0; } }
+    .welcome-article__title {
+      max-width: 260px;
+      margin-bottom: 1rem; }
+    .welcome-article__description {
+      max-width: 290px; }
 
 .hamburguer-button {
   --square: 3em;

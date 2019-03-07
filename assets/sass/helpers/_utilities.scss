@@ -20,3 +20,13 @@
 .uppercase {
   text-transform: uppercase;
 }
+
+.red {
+  background-color: var(--main-bg-color);
+  color: var(--second-bg-color);
+}
+
+.gray {
+  background-color: var(--second-bg-color);;
+  color: var(--main-bg-color);
+}

@@ -9,3 +9,15 @@
     }
   }
 }
+
+
+/*----------  Mixin flexbox responsive  ----------*/
+
+@mixin flex-responsive($width) {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 1 1 $width;
+  }
+}
