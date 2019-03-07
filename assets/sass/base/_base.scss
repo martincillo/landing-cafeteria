@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: var(--main-font), var(--alternae-font);
+  font-family: var(--main-font), var(--alternate-font);
   font-size: var(--font-size);
   line-height: var(--line-height);
   color: var(--main-text-color);
@@ -18,6 +18,9 @@ html {
 a {
   text-decoration: none;
   color: var(--main-text-color);
+
+  // &:hover { background-color: rgb(43, 41, 41) }
+  &:hover { background-color: var(--main-bg-color); }
 }
 
 img {

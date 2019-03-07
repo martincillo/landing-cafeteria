@@ -6,29 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
-  <title>Document</title>
+  <title>Café Oslo</title>
 </head>
 <body>
   <main>
     <header class="main-header">
-      <img src="./assets/img/fondo1.jpg" alt="">
-      <div class="main-header__top">
-        <img class="logo" src="./assets/img/logo.png" alt="Café Oslo logo">
-        <div class="hamburger-button"></div>
-        <nav>
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#">El espacio</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Productos</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Ofertas</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Reservas</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contacto </a></li>
-          </ul>
-        </nav>
+      <img class="main-header__bg" src="./assets/img/fondo1.jpg" alt="">
+      <div class="l-container main-header__content">
+        <div class="main-header-top">
+          <img class="main-header-top__logo" src="./assets/img/logo.png" alt="Café Oslo logo">
+          <div class="hamburguer-button" id="hamburguer-button"></div>
+          <nav class="main-nav" id="main-nav">
+            <ul class="hamburguer-menu uppercase">
+              <li class="hamburguer-menu__item"><a class="hamburguer-menu__link" href="#">El espacio</a></li>
+              <li class="hamburguer-menu__item"><a class="hamburguer-menu__link" href="#">Productos</a></li>
+              <li class="hamburguer-menu__item"><a class="hamburguer-menu__link" href="#">Ofertas</a></li>
+              <li class="hamburguer-menu__item"><a class="hamburguer-menu__link" href="#">Reservas</a></li>
+              <li class="hamburguer-menu__item"><a class="hamburguer-menu__link" href="#">Contacto </a></li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="uppercase">Recién hecho, todos los días</h1>
+        <p class="">
+          Chocolate cake chocolate cake pie candy canes chocolate cake bonbon. I love marzipan liquorice I love cake chupa chups. Pie danish macaroon ice cream ice cream. Bonbon sweet bonbon jelly beans jelly-o I love lollipop.
+        </p>
       </div>
-      <h2 class="">Recién hecho, todos los días</h2>
-      <p class="">
-        Chocolate cake chocolate cake pie candy canes chocolate cake bonbon. I love marzipan liquorice I love cake chupa chups. Pie danish macaroon ice cream ice cream. Bonbon sweet bonbon jelly beans jelly-o I love lollipop.
-      </p>
     </header>
     <section class="welcome">
       <article class="red">
@@ -90,5 +92,7 @@
   <footer class="main-footer">
     <p>Febrero 2018 <br> Todos los derechos reservados</p>
   </footer>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

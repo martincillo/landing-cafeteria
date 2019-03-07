@@ -1,0 +1,51 @@
+.main-header {
+  position: relative;
+  height: 465px;
+  text-align: center;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: relative;
+    
+    h1 {
+      position: relative;
+      margin-bottom: 3rem;
+
+      &::after {
+        @extend %line-pseudo;
+      }
+    }
+
+    p {
+      // padding: 0 1rem;
+      color: var(--second-bg-color);
+    }
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    // background-color: yellow;
+
+    &__logo {
+      width: 200px;
+      // height: 40px;
+      object-fit: none;
+      object-position: 0 -5px;
+    }
+
+    &__hamburguer-button {
+
+    }
+  }
+}
+

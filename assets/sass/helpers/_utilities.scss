@@ -1,6 +1,14 @@
 /*----------  Placeholders  ----------*/
-
-
+%line-pseudo {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
 
 /*----------  Class utilities  ----------*/
 
