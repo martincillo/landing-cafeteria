@@ -1,7 +1,12 @@
 .main-header {
+  --height-container: 465px;
   position: relative;
-  height: 465px;
+  height: var(--height-container);
   text-align: center;
+
+  @include mq(l) {
+    --height-container: 660px;
+  }
 
   &__bg {
     position: absolute;
@@ -15,6 +20,7 @@
     position: relative;
     
     h1 {
+      max-width: 365px;
       position: relative;
       margin-bottom: 3rem;
 
@@ -24,8 +30,8 @@
     }
 
     p {
-      // padding: 0 1rem;
       color: var(--second-bg-color);
+      max-width: 520px;
     }
   }
 
@@ -45,6 +51,12 @@
 
     &__hamburguer-button {
 
+    }
+  }
+
+  &-bottom {
+    @include mq(l) {
+      padding-top: 8rem;
     }
   }
 }

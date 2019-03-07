@@ -21,29 +21,51 @@
      transparent 60%, transparent 80%,
      var(--second-bg-color) 80%);
   }
+
+  @include mq(l) { display: none; }
 }
 
 .main-nav {
   position: fixed;
   top: var(--header-height);
   right: -100%;
+  z-index: var(--z-fixed);
   transition: right .5s;
+  width: 80vw;
+  height: 100vh;
+  background-color: #000;
+  
+  @include mq(l) { 
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+  }
 }
 
 .hamburguer-menu {
-  width: 80vw;
-  height: 100vh;
   list-style: none;
   text-align: left;
-  background-color: #000;
+
+  @include mq(l) { display: flex; }
 
   &__item {
-
+    
   }
-
+  
   &__link {
     display: block;
-    padding: 2rem 1rem;
     border-bottom: .5px solid var(--second-bg-color);
+    padding: 2rem 1rem;
+    font-weight: var(--extra-bold-font-weight);
+    transition: background-color .3s;
+
+    @include mq(l) { 
+      border-bottom: none;
+      padding: 0 1rem;
+      
+      &:hover { background-color: rgba(0,0,0,.9); }
+    }
+
   }
 }
