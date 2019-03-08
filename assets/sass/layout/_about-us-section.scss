@@ -1,0 +1,42 @@
+.about-us {
+  position: relative;
+  text-align: center;
+  
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 15%;
+    
+    @include mq(l) { object-fit: initial; }
+  }
+  
+  &-content {
+    padding: 4.2rem 0;
+    position: relative;
+
+    @include mq(l) { padding: 9rem 0; }
+    
+    &__title,
+    &__description { margin-bottom: 2.5rem; }
+
+    &__title {
+      position: relative;
+
+      &::after { @extend %line-pseudo; }
+    }
+
+    &__description,
+    &__button { max-width: 300px; }
+
+    &__description {
+
+      @include mq(l) { max-width: 520px; }
+    }
+
+    &__button { transition: background-color .3s; }
+  }
+}

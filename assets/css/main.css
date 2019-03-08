@@ -27,11 +27,11 @@
 
 /*----------  Mixin flexbox responsive  ----------*/
 /*----------  Placeholders  ----------*/
-.main-header__content h1::after {
+.main-header__content h1::after, .about-us-content__title::after {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -20%;
+  bottom: -20px;
   width: 100px;
   height: 2px;
   background-color: #fff;
@@ -80,6 +80,15 @@ img {
   height: auto;
   max-width: 100%; }
 
+h1 {
+  font-size: var(--h1-font-size); }
+
+h2 {
+  font-size: var(--h2-font-size); }
+
+h3 {
+  font-size: var(--h3-font-size); }
+
 .l-container {
   max-width: var(--max-width);
   padding-left: var(--padding-container);
@@ -102,7 +111,7 @@ img {
   .main-header__content {
     position: relative; }
     .main-header__content h1 {
-      max-width: 365px;
+      max-width: 370px;
       position: relative;
       margin-bottom: 3rem; }
     .main-header__content p {
@@ -134,10 +143,42 @@ img {
         flex: 1 1 50%;
         padding: 6.5rem 0; } }
     .welcome-article__title {
-      max-width: 260px;
+      max-width: 302px;
       margin-bottom: 1rem; }
     .welcome-article__description {
       max-width: 290px; }
+
+.about-us {
+  position: relative;
+  text-align: center; }
+  .about-us__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 15%; }
+    @media screen and (min-width: 64em) {
+      .about-us__img {
+        object-fit: initial; } }
+  .about-us-content {
+    padding: 4.2rem 0;
+    position: relative; }
+    @media screen and (min-width: 64em) {
+      .about-us-content {
+        padding: 9rem 0; } }
+    .about-us-content__title, .about-us-content__description {
+      margin-bottom: 2.5rem; }
+    .about-us-content__title {
+      position: relative; }
+    .about-us-content__description, .about-us-content__button {
+      max-width: 300px; }
+    @media screen and (min-width: 64em) {
+      .about-us-content__description {
+        max-width: 520px; } }
+    .about-us-content__button {
+      transition: background-color .3s; }
 
 .hamburguer-button {
   --square: 3em;
@@ -193,6 +234,13 @@ img {
         padding: 0 1rem; }
         .hamburguer-menu__link:hover {
           background-color: rgba(0, 0, 0, 0.9); } }
+
+.button {
+  display: block;
+  width: 100%;
+  padding: .5rem 1.5rem;
+  font-size: 14px;
+  border: 3px solid var(--main-text-color); }
 
 .is-show {
   right: 0; }
