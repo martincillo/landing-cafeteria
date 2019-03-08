@@ -1,0 +1,22 @@
+.main-footer {
+  background-color: var(--alternate-bg-color);
+  &__description {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .guion {
+      display: none;
+      @include mq(l) {
+        display: initial;
+      }
+    }
+
+    span:last-child {
+      display: block;
+
+      @include mq(l) {
+        display: initial;
+      }
+    }
+  }
+}

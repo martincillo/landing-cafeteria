@@ -288,5 +288,21 @@ h3 {
   font-size: 14px;
   border: 3px solid var(--main-text-color); }
 
+.main-footer {
+  background-color: var(--alternate-bg-color); }
+  .main-footer__description {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    .main-footer__description .guion {
+      display: none; }
+      @media screen and (min-width: 64em) {
+        .main-footer__description .guion {
+          display: initial; } }
+    .main-footer__description span:last-child {
+      display: block; }
+      @media screen and (min-width: 64em) {
+        .main-footer__description span:last-child {
+          display: initial; } }
+
 .is-show {
   right: 0; }
