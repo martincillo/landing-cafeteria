@@ -33,7 +33,6 @@
     &__button { max-width: 300px; }
 
     &__description {
-
       @include mq(l) { max-width: 520px; }
     }
 
