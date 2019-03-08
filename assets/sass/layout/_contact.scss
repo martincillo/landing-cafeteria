@@ -1,0 +1,3 @@
+.article__description {
+  @include mq(l) { max-width: 420px; }
+}
